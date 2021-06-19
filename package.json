@@ -1,0 +1,11 @@
+{
+  "name": "cloudfront-functions",
+  "version": "1.0.0",
+  "description": "cloudfront-functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "author": "",
+  "license": "ISC"
+}
