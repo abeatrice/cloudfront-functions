@@ -59,7 +59,7 @@ resource "aws_cloudfront_distribution" "abeatrice-hey-cloudfront-distribution" {
 
     function_association {
       event_type = "viewer-response"
-      function_arn = aws_cloudfront_function.abeatrice-hey-cf-func-viewer-reponse.arn
+      function_arn = aws_cloudfront_function.abeatrice-hey-cf-func-viewer-response.arn
     }
   }
 
