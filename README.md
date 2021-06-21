@@ -13,3 +13,11 @@ You will need aws console credentials in the ~/.aws/credentials file. Terraform 
 $ terraform init
 $ terraform apply
 ```
+
+# Clean up
+
+Destroy the resources terraform creates. You will need to remove the index.html file from the origin bucket.
+
+```sh
+$ terraform destroy
+```
