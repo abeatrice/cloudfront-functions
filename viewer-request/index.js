@@ -1,12 +1,19 @@
 function handler(event) {
     var request = event.request;
     var cookies = request.cookies;
-    var regex = /[^a-zA-Z0-9/_]+/g;
+    var id = event.context.requestId.replace(/=+/g, '')
+
     if(!cookies['visitor_id']) {
-        cookies['visitor_id'] = {
-            value: event.context.requestId.replace(regex, '')
-        }    
+      cookies['visitor_id'] = {
+        value: id
+      }
     }
-    console.log(event);
+
+    if(!cookies['visit_id']) {
+      cookies['visit_id'] = {
+        value: id
+      }    
+    }
+
     return request;
 }
