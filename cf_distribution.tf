@@ -2,15 +2,6 @@ locals {
     s3_origin_id = "abeatriceHeyS3Origin"
 }
 
-resource "aws_s3_bucket" "abeatrice-hey-s3-origin" {
-  bucket = "abeatrice-hey-s3-origin"
-  acl = "private"
-}
-
-resource "aws_s3_bucket" "abeatrice-hey-cf-access-logs" {
-  bucket = "abeatrice-hey-cf-access-logs"
-}
-
 resource "aws_cloudfront_origin_access_identity" "abeatrice-hey-cf-origin-access-identity" {
 }
 
